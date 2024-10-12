@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="meowl.css">
+    <title>Meowl Gallery</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #f0f0f0; /* Light background for better contrast */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the images */
+            max-width: 1200px; /* Max width for the gallery */
+        }
+
+        .gallery img {
+            margin: 10px; /* Space between images */
+            height: 200px; /* Set height for consistency */
+            width: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+            transition: transform 0.3s; /* Smooth scale effect on hover */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Scale up on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Meowl Gallery!</h1>
+    <div class="gallery">
+        <img src="Meowl1.jpg" alt="Meowl 1">
+        <img src="Meowl2.jpg" alt="Meowl 2">
+        <img src="Meowl3.jpg" alt="Meowl 3">
+        <img src="Meowl4.jpg" alt="Meowl 4">
+        <img src="Meowl5.jpg" alt="Meowl 5">
+        <img src="Meowl6.jpg" alt="Meowl 6">
+        <img src="Meowl7.jpg" alt="Meowl 7">
+        <img src="Meowl8.jpg" alt="Meowl 8">
+        <img src="Meowl9.jpg" alt="Meowl 9">
+
+        <a href="firstpage.html"> << (go back) </a>
+        <a href="index.html"> >> (go home) </a>
+    </div>
+</body>
+
+</html>

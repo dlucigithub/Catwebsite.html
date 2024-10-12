@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="meowl.css">
+
+    <title>Cat Images!!!</title>
+
+    <!-- Style CSS-->
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #964B00; /* Changed background color */
+        font-family: Arial, sans-serif;
+      }
+
+      .centered-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        text-align: center;
+      }
+
+      img {
+        height: 500px;
+        width: 500px;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #ffcc00;
+        color: #333;
+      }
+      
+      button:hover {
+        background-color: #ffbb00;
+      }
+
+      .navigation {
+        margin-top: 20px; /* Add some space above the navigation links */
+      }
+
+      .navigation a {
+        margin: 0 10px; /* Space between links */
+        text-decoration: none; /* Remove underline */
+        color: #333; /* Link color */
+        font-family: Arial; /* Font family for links */
+      }
+
+      .navigation a:hover {
+        text-decoration: underline; /* Underline on hover for better UX */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centered-content">
+      <!-- Add the image -->
+      <img src="Cats1.jpg" alt="Kitty no load :(" />
+      <!-- Add the button below the image -->
+      <button type="button" id="myButton">🐾</button>
+
+      <!-- Navigation Links -->
+      <div class="navigation">
+        <a href="secondpage.html"> >> (go to next) </a>
+        <a href="startpage.html"> << (go back) </a>
+      </div>
+
+      <!-- Add the audio element -->
+      <audio id="mySound" src="Meow.mp3"></audio> <!-- Replace 'Meow.mp3' with your audio file path -->
+    </div>
+
+    <script>
+      // Select the button and audio element using their IDs
+      const button = document.getElementById('myButton');
+      const sound = document.getElementById('mySound');
+
+      // Add an event listener for the 'click' event
+      button.addEventListener('click', function() {
+        // Play the sound when the button is pressed
+        sound.play();
+      });
+    </script>
+  </body>
+</html>
